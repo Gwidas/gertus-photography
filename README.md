@@ -12,6 +12,8 @@ Users are able to book services for events and private use.
 Users are able to purchase print designs to address their needs
 Allow users to order a particular print  to suit their goals.
 The user would fill out a form describing their needs, including fields such as type (e.g. location, theme, poster), size and description, get an automatic quote and then pay.
+View list of products (Prints) 
+Easily view  the total of purchase items at any time
 
 ## Site owner’s goals
 

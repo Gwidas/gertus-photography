@@ -1,0 +1,16 @@
+[
+    {
+      "pk": 1,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5001340155",
+        "name": "Racer",
+        "description": "Test text",
+        "price": 53.99,
+        "category": 1,
+        "rating": 4.6,
+        "image_url": "/workspace/gertus-photography/media/prints/0107-0509AG14-008_107.jpg",
+        "image": "0107-0509AG14-008_107.jpg"
+      }
+    }
+]

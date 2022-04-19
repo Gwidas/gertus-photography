@@ -5,12 +5,139 @@
       "fields": {
         "sku": "pp5001340155",
         "name": "Racer",
-        "description": "Test text",
+        "description": "White and blue contrast coloring. Best applied on white wall with good light exposure",
         "price": 53.99,
         "category": 1,
         "rating": 4.6,
-        "image_url": "/workspace/gertus-photography/media/prints/0107-0509AG14-008_107.jpg",
-        "image": "0107-0509AG14-008_107.jpg"
+        "image_url": "../media/white_blue.jpg",
+        "image": "white_blue.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5001600425",
+        "name": "Racer in color",
+        "description": "Bright colors with distortion. Best applied on white wall with good light exposure",
+        "price": 38.99,
+        "category": 1,
+        "rating": 3.6,
+        "image_url": "../media/colors_racer.jpg",
+        "image": "colors_racer.jpg"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5001730010",
+        "name": "Racer sketch",
+        "description": "Low angle picture with high contrast and ambient. Best applied on white wall with good light exposure ",
+        "price": 68.99,
+        "category": 1,
+        "rating": 4.3,
+        "image_url": "../media/color_sketch.jpg",
+        "image": "color_sketch.jpg"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5001890157",
+        "name": "Racer in black and white",
+        "description": "Black and white print with hight contrast lines and low exposure. Best applied on white wall with good light exposure ",
+        "price": 54.00,
+        "category": 1,
+        "rating": 3.8,
+        "image_url": "../media/black_white.jpg",
+        "image": "black_white.jpg"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5002111605",
+        "name": "Racer in black and white right side angle",
+        "description": "Black and white print with hight contrast lines and low exposure, shot been taken form right side. Best applied on white wall with good light exposure ",
+        "price": 54.00,
+        "category": 1,
+        "rating": 4.3,
+        "image_url": "../media/black_white2.jpg",
+        "image": "black_white2.jpg"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5002260206",
+        "name": "Singer from Band 'Doller'",
+        "description": "This piece was catpured at a concert in Copenhagen. Best applied on white wall with good light exposure",
+        "price": 83.99,
+        "category": 2,
+        "rating": 4.6,
+        "image_url": "../media/doller.jpg",
+        "image": "doller.jpg"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5002440521",
+        "name": "Biker with a cigarette",
+        "description": "Great piece of a memeber one of the motorcycle clubs in Berlin. Best applied on dark wall with good light exposure ",
+        "price": 88.00,
+        "category": 2,
+        "rating": 4.9,
+        "image_url": "../media/biker_cig.jpg",
+        "image": "biker_cig.jpg"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5002601115",
+        "name": "Smoking Biker",
+        "description": "Picture of a memeber from one of the clubs in Denmark. Best applied on dark wall with good light exposure ",
+        "price": 76.00,
+        "category": 2,
+        "rating": 4.9,
+        "image_url": "../media/smoking_biker2.jpg",
+        "image": "smoking_biker2.jpg"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5002690715",
+        "name": "Racer rainbow",
+        "description": "White and blue contrast with rainbow coloring. Best applied on white wall with good light exposure",
+        "price": 23.99,
+        "category": 1,
+        "rating": 4.6,
+        "image_url": "../media/one_more.jpg",
+        "image": "one_more.jpg"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5002701115",
+        "name": "Tattoo Girls",
+        "description": "Capture of a tattoo artist in Poland. Best applied on white wall with good light exposure",
+        "price": 73.99,
+        "category": 2,
+        "rating": 4.6,
+        "image_url": "../media/tatto_girls.jpg",
+        "image": "tatto_girls.jpg"
       }
     }
 ]
+

@@ -138,6 +138,161 @@
         "image_url": "../media/tatto_girls.jpg",
         "image": "tatto_girls.jpg"
       }
+    },
+    {
+      "pk": 11,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5002761055",
+        "name": "Powder face ",
+        "description": "Demostration againts drugs. Best applied on white wall with good light exposure",
+        "price": 99.99,
+        "category": 2,
+        "rating": 4.6,
+        "image_url": "../media/poweder.jpg",
+        "image": "powder.jpg"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5002820069",
+        "name": "Kawasaki z800",
+        "description": "This is Kawasaki z800 from 2017. Capture was taken in Barcelona Spain. Best applied on white wall with good light exposure",
+        "price": 73.50,
+        "category": 3,
+        "rating": 4.9,
+        "image_url": "../media/kawasaki.jpg",
+        "image": "kawasaki.jpg"
+      }
+    },
+    {
+      "pk": 13,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5002820147",
+        "name": "Harley Davidson Sportster 883",
+        "description": "Capture was taken in Milan Italy. Best applied on white wall with good light exposure",
+        "price": 73.50,
+        "category": 3,
+        "rating": 4.9,
+        "image_url": "../media/sporster.jpg",
+        "image": "sporster.jpg"
+      }
+    },
+    {
+      "pk": 14,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5002910572",
+        "name": "Yamaha xs650",
+        "description": "Capture was taken in Copenhagen Denmark. Best applied on white wall with good light exposure",
+        "price": 53.50,
+        "category": 3,
+        "rating": 3.9,
+        "image_url": "../media/xs650.jpg",
+        "image": "xs650.jpg"
+      }
+    },
+    {
+      "pk": 15,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5002990740",
+        "name": "Harley Davidson Shovelhead",
+        "description": "Capture was taken in Copenhagen Denmark. Best applied on white wall with good light exposure",
+        "price": 63.50,
+        "category": 3,
+        "rating": 4.5,
+        "image_url": "../media/shovel.jpg",
+        "image": "shovel.jpg"
+      }
+    },
+    {
+      "pk": 16,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5003050248",
+        "name": "Honda CX 500",
+        "description": "Capture was taken in Osaka Japan. Best applied on white wall with good light exposure",
+        "price": 43.50,
+        "category": 3,
+        "rating": 4.5,
+        "image_url": "../media/HondaCX.jpg",
+        "image": "HondaCX.jpg"
+      }
+    },
+    {
+      "pk": 17,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5003070787",
+        "name": "Yamaha xs650",
+        "description": "Capture was taken in Copenhagen Denmark. Best applied on white wall with good light exposure",
+        "price": 43.50,
+        "category": 3,
+        "rating": 4.5,
+        "image_url": "../media/yamaha.jpg",
+        "image": "yamaha.jpg"
+      }
+    },
+    {
+      "pk": 18,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5003090182",
+        "name": "Triumph 5T Thunderbird",
+        "description": "Capture was taken in Copenhagen Denmark. Best applied on white wall with good light exposure",
+        "price": 83.50,
+        "category": 3,
+        "rating": 4.5,
+        "image_url": "../media/triumph.jpg",
+        "image": "triumph.jpg"
+      }
+    },
+    {
+      "pk": 19,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5003090182",
+        "name": "MotoGuzzi",
+        "description": "Capture was taken in Berlin Germany. Best applied on white wall with good light exposure",
+        "price": 83.50,
+        "category": 3,
+        "rating": 4.5,
+        "image_url": "../media/guzzi.jpg",
+        "image": "guzzi.jpg"
+      }
+    },
+    {
+      "pk": 20,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5003161326",
+        "name": "Harley Davidson Ironhead",
+        "description": "Capture was taken in Oslo Norway. Best applied on white wall with good light exposure",
+        "price": 83.50,
+        "category": 3,
+        "rating": 4.5,
+        "image_url": "../media/ironhead.jpg",
+        "image": "ironhead.jpg"
+      }
+    },
+    {
+      "pk": 21,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5003230723",
+        "name": "Garage",
+        "description": "Capture was taken in Copenhagen Denmark. Best applied on white wall with good light exposure",
+        "price": 83.50,
+        "category": 3,
+        "rating": 4.5,
+        "image_url": "../media/garage.jpg",
+        "image": "garage.jpg"
+      }
     }
+    
 ]
 

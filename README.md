@@ -28,3 +28,14 @@ The webshop will allow you to buy prints online, there's a vast selection to fit
 - User friendly interface.
 - Show skills and understanding of specific subjects.
 - Promote upcoming events
+
+## Technology Used 
+
+- [HTML](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+## Frameworks
+- [Django](https://en.wikipedia.org/wiki/Django)
+- [jQuery](https://en.wikipedia.org/wiki/JQuery)

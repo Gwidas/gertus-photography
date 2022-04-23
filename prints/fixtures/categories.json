@@ -3,15 +3,15 @@
       "pk": 1,
       "model": "prints.category",
       "fields": {
-        "name": "Motosport",
-        "friendly_name": "Motosport"
+        "name": "motorsport",
+        "friendly_name": "Motorsport"
       }
     },
     {
       "pk": 2,
       "model": "prints.category",
       "fields": {
-        "name": "Poeple",
+        "name": "poeple",
         "friendly_name": "Poeple"
       }
     },
@@ -19,7 +19,7 @@
       "pk": 3,
       "model": "prints.category",
       "fields": {
-        "name": "Bikes",
+        "name": "bikes",
         "friendly_name": "Bikes"
       }
     }

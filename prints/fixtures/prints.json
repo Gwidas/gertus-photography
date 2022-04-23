@@ -102,13 +102,13 @@
       "model": "prints.print",
       "fields": {
         "sku": "pp5002601115",
-        "name": "Smoking Biker",
+        "name": "Sitting biker",
         "description": "Picture of a memeber from one of the clubs in Denmark. Best applied on dark wall with good light exposure ",
         "price": 76.00,
         "category": 2,
         "rating": 4.9,
-        "image_url": "../media/smoking_biker2.jpg",
-        "image": "smoking_biker2.jpg"
+        "image_url": "../media/bench.jpg",
+        "image": "bench.jpg"
       }
     },
     {
@@ -219,8 +219,8 @@
         "price": 43.50,
         "category": 3,
         "rating": 4.5,
-        "image_url": "../media/HondaCX.jpg",
-        "image": "HondaCX.jpg"
+        "image_url": "../media/honda.jpg",
+        "image": "honda.jpg"
       }
     },
     {
@@ -291,6 +291,20 @@
         "rating": 4.5,
         "image_url": "../media/garage.jpg",
         "image": "garage.jpg"
+      }
+    },
+    {
+      "pk": 22,
+      "model": "prints.print",
+      "fields": {
+        "sku": "pp5003270936",
+        "name": "Head Light",
+        "description": "Capture was taken in Copenhagen Denmark. Best applied on white wall with good light exposure",
+        "price": 53.50,
+        "category": 3,
+        "rating": 4.5,
+        "image_url": "../media/front.jpg",
+        "image": "front.jpg"
       }
     }
     

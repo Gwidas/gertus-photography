@@ -32,10 +32,16 @@ The webshop will allow you to buy prints online, there's a vast selection to fit
 ## Technology Used 
 
 - [HTML](https://en.wikipedia.org/wiki/HTML)
+ was use to create templates.
 - [CSS](https://en.wikipedia.org/wiki/CSS)
+ was used to edjust-enhance visual appiel of the website.
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+ was used to manupilate adniations and sets of calander 
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+ was used to create function with purpose of manupilating behavious or specific tasks (online purchese, editing, uploading and deleting)
 
 ## Frameworks
 - [Django](https://en.wikipedia.org/wiki/Django)
+was used to create templates.
 - [jQuery](https://en.wikipedia.org/wiki/JQuery)
+was used to make code simple, concise and reusable. 

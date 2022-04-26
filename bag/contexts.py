@@ -12,13 +12,13 @@ def bag_contents(request):
     bag = request.session.get('bag', {})
 
     for item_id, quantity in bag.items():
-        print_td = get_object_or_404(Print, pk=item_id)
-        total += quantity * print_td.price
+        print = get_object_or_404(Print, pk=item_id)
+        total += quantity * print.price
         print_count += quantity
         bag_items.append({
             'item_id': item_id,
             'quantity': quantity,
-            'print_td': print_td,
+            'print': print,
         })
 
     if total < settings.STANDART_DELIVERY_PRECENTAGE:

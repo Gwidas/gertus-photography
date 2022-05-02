@@ -1,13 +1,19 @@
-## Gertus Photography
+## Gertus Prints
  
-Purpose of this website is to book professional photographer service and abilty to purchese prints.
+Purpose of this website is to buy prints from a professional photographer.
+Possibility to contact the owner of photography prints.
+
+
 
 ----------------------------------------------------------------------------------------
 ## The project 
 
-It's very important to have a memory of something important that happened in your life.
-This Project (Gertus.Photography) will give you the opportunity to book professional photographers for events and personal purposes.
-The webshop will allow you to buy prints online, there's a vast selection to fit your needs.
+In this project you will see different types of prints taken by professional photographer with the option to buy them.
+Users are provided with links to navigate to pages. 
+Users are able to contact the owner of prints for inquiries for possible custom print.
+
+
+----------------------------------------------------------------------------------------
 
 
 ## External User’s goals

@@ -1,7 +1,10 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.db.models.functions import Lower
+
 from .models import Print, Category
+from .forms import PrintForm
 
 
 def all_prints(request):
@@ -53,7 +56,7 @@ def all_prints(request):
     return render(request, 'prints/prints.html', context)
 
 def print_detail(request, print_id):
-    """ A view to show individual product details """
+    """ A view to show individual print details """
 
     print_error = get_object_or_404(Print, pk=print_id)
 
@@ -62,3 +65,26 @@ def print_detail(request, print_id):
     }
 
     return render(request, 'prints/print_detail.html', context)
+
+
+def print_detail(request, print_id):
+    """ A view to show individual print details """
+
+    print = get_object_or_404(Print, pk=print_id)
+
+    context = {
+        'print': print,
+    }
+
+    return render(request, 'prints/print_detail.html', context)
+
+
+def add_print(request):
+    """ Add a print to the store """
+    form = PrintForm()
+    template = 'prints/add_print.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)

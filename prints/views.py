@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
@@ -68,8 +69,13 @@ def print_detail(request, print_id):
     return render(request, 'prints/print_detail.html', context)
 
 
+@login_required
 def add_print(request):
     """ Add a print to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, you have no Admin rights to do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = PrintForm(request.POST, request.FILES)
         if form.is_valid():
@@ -89,8 +95,13 @@ def add_print(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_print(request, print_id):
     """ Edit a print in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, you have no Admin rights to do that.')
+        return redirect(reverse('home'))
+
     print = get_object_or_404(Print, pk=print_id)
     if request.method == 'POST':
         form = PrintForm(request.POST, request.FILES, instance=print)
@@ -113,8 +124,13 @@ def edit_print(request, print_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_print(request, print_id):
     """ Delete a print from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, you have no Admin rights to do that.')
+        return redirect(reverse('home'))
+
     print = get_object_or_404(Print, pk=print_id)
     print.delete()
     messages.success(request, 'Print deleted!')

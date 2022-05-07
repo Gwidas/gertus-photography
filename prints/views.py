@@ -55,17 +55,6 @@ def all_prints(request):
 
     return render(request, 'prints/prints.html', context)
 
-def print_detail(request, print_id):
-    """ A view to show individual print details """
-
-    print_error = get_object_or_404(Print, pk=print_id)
-
-    context = {
-        'print': print_error,
-    }
-
-    return render(request, 'prints/print_detail.html', context)
-
 
 def print_detail(request, print_id):
     """ A view to show individual print details """
@@ -84,9 +73,9 @@ def add_print(request):
     if request.method == 'POST':
         form = PrintForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            print = form.save()
             messages.success(request, 'Successfully added print!')
-            return redirect(reverse('add_print'))
+            return redirect(reverse('print_detail', args=[print.id]))
         else:
             messages.error(request, 'Failed to add print. Please ensure the form is valid.')
     else:
@@ -122,3 +111,11 @@ def edit_print(request, print_id):
     }
 
     return render(request, template, context)
+
+
+def delete_print(request, print_id):
+    """ Delete a print from the store """
+    print = get_object_or_404(Print, pk=print_id)
+    print.delete()
+    messages.success(request, 'Print deleted!')
+    return redirect(reverse('prints'))

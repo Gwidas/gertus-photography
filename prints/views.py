@@ -98,3 +98,27 @@ def add_print(request):
     }
 
     return render(request, template, context)
+
+
+def edit_print(request, print_id):
+    """ Edit a print in the store """
+    print = get_object_or_404(Print, pk=print_id)
+    if request.method == 'POST':
+        form = PrintForm(request.POST, request.FILES, instance=print)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated print!')
+            return redirect(reverse('print_detail', args=[print.id]))
+        else:
+            messages.error(request, 'Failed to update print. Please ensure the form is valid.')
+    else:
+        form = PrintForm(instance=print)
+        messages.info(request, f'You are editing {print.name}')
+
+    template = 'prints/edit_print.html'
+    context = {
+        'form': form,
+        'print': print,
+    }
+
+    return render(request, template, context)

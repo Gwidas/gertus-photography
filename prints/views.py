@@ -8,6 +8,7 @@ from .models import Print, Category
 from .forms import PrintForm
 
 
+
 def all_prints(request):
     """ A view to show all prints, including sorting and search queries """
 
@@ -24,13 +25,14 @@ def all_prints(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 prints = prints.annotate(lower_name=Lower('name'))
-
-                if 'direction' in request.GET:
-                    direction = request.GET['direction']
-                    if direction == 'desc':
-                        sortkey = f'-{sortkey}'
-                prints = prints.order_by(sortkey)
-
+            if sortkey == 'category':
+                sortkey = 'category__name'
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            prints = prints.order_by(sortkey)
+            
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             prints = prints.filter(category__name__in=categories)
@@ -41,7 +43,7 @@ def all_prints(request):
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('prints'))
-
+            
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             prints = prints.filter(queries)
 
@@ -73,7 +75,7 @@ def print_detail(request, print_id):
 def add_print(request):
     """ Add a print to the store """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, you have no Admin rights to do that.')
+        messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -99,7 +101,7 @@ def add_print(request):
 def edit_print(request, print_id):
     """ Edit a print in the store """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, you have no Admin rights to do that.')
+        messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
     print = get_object_or_404(Print, pk=print_id)
@@ -128,7 +130,7 @@ def edit_print(request, print_id):
 def delete_print(request, print_id):
     """ Delete a print from the store """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, you have no Admin rights to do that.')
+        messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
     print = get_object_or_404(Print, pk=print_id)

@@ -51,3 +51,7 @@ Users are able to contact the owner of prints for inquiries for possible custom 
 was used to create templates.
 - [jQuery](https://en.wikipedia.org/wiki/JQuery)
 was used to make code simple, concise and reusable. 
+
+## Credits
+- [CodeInstitute](https://codeinstitute.net/global/)thank you for all support and amazing service.
+- [ckz8780](https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/e3c29afef63a8e5a8dae3fdc6b1277eb32206dbc) thank you for amazing tutorial. This tutorial been used to accomplish most working functions and logic in this project. 

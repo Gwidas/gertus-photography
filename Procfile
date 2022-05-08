@@ -1,0 +1,1 @@
+web: gunicorn gertus_photography.wsgi:application

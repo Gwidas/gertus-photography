@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-aq7#pa2+246c5(8(*28l#&38f3%@^*#+)vx0lkj!94rdw-)xda
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['gertus_photography.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['gertus-photography.herokuapp.com', 'localhost']
 
 
 # Application definition
